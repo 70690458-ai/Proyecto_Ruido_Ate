@@ -1,0 +1,38 @@
+Genera una aplicación web en Python usando Streamlit para desplegar modelos de Machine Learning entrenados con el dataset “Monitoreo de Ruido por zonas en la jurisdicción de la Municipalidad Distrital de Ate”.
+
+La aplicación debe cargar dos modelos almacenados en GitHub dentro de una carpeta llamada “modelos”:
+
+- random_forest_model.pkl
+- linear_regression_model.pkl
+
+Utiliza joblib para cargar los modelos.
+
+La interfaz debe permitir que el usuario ingrese manualmente los valores requeridos para predecir el nivel de ruido LAEQ.
+
+Columnas de entrada:
+
+- COORDENADA_X
+- COORDENADA_Y
+- ECA_RUIDO
+- LAF_MIN
+- LAF_MAX
+- L90
+- PROVINCIA
+- DISTRITO
+- UBIGEO
+- FECHA_CORTE
+
+Tener en cuenta que el target del modelo se llama “LAEQ”.
+
+Requisitos:
+1. Crear una interfaz ordenada y amigable en Streamlit.
+2. Agregar título y descripción del proyecto.
+3. Permitir seleccionar el modelo a usar mediante un selectbox.
+4. Agregar campos de entrada para cada variable.
+5. Agregar un botón llamado “Obtener predicción”.
+6. Mostrar la predicción final del nivel de ruido LAEQ en decibeles.
+7. Usar joblib para cargar los modelos.
+8. El código debe estar completo y listo para ejecutar con: streamlit run app.py.
+9. Generar también el archivo requirements.txt.
+10. Explicar brevemente cómo subir el proyecto a GitHub y desplegarlo en Streamlit Cloud.
+11. Agregar un opcion para Abrir un cuaderno en Google Colab
